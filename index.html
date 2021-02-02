@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class='heading'> 
+        <img src="./images/undraw_book_lover_mkck.svg" alt="">
+        <h3>Ever wondered how many books you have read in your life??Go ahead and add...📚</h3><br>
+    </div>
+    <button id='addButton' onclick="displayForm()">Add a book</button><hr>
+    <div id='bookForm'>
+        <form class='addBook' onsubmit="submitForm() ; return false" >
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id='bookTitle' name='bookTitle' placeholder="Enter Book Name" required>
+            <label for="bookAuthor">Author Name:</label>
+            <input type="text" id='bookAuthor' name='bookAuthor' placeholder="Author Name" required>
+            <label for="bookPages">Total Pages:</label>
+            <input type="number" id='bookPages' name='bookPages' placeholder="No of pages" required>
+            <label for="status">Finished Reading??</label>
+            <select name="status" id="readStatus">
+                <option value="Yes">Yes👍</option>
+                <option value="No">No👎</option>
+            </select>
+            <button style='margin-top: 15px;'  type="submit">submit</button>
+        </form>
+    </div>
+    <div id='container'></div>
+</body>
+    <script src='./logic.js'></script>
+</html>

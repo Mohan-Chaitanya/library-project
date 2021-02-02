@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+body {
+	background-color: rgb(252, 235, 249);
+	font-family: "Sriracha", cursive;
+}
+h4 {
+	text-align: center;
+}
+
+img {
+	width: 10rem;
+	padding-right: 10rem;
+	margin-left: 3rem;
+}
+
+.heading {
+	display: flex;
+}
+
+#container {
+	margin: 1rem;
+	display: block;
+	border: none;
+}
+
+#bookForm {
+	float: right;
+	position: sticky;
+	display: block;
+	flex-direction: column;
+	display: none;
+	width: 30%;
+	margin-left: 20rem;
+	background-color: rgb(0, 0, 0);
+	border-radius: 4px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#addButton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	background-color: rgb(21, 123, 219);
+	height: 3rem;
+	width: 6rem;
+	border-radius: 5px;
+}
+
+#addButton:hover {
+	background-color: rgb(71, 105, 74);
+}
+
+.addBook {
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 1.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input {
+	width: 92.5%;
+	padding: 10px 15px;
+	border-radius: 4px;
+	border: none;
+}
+
+select {
+	width: 100%;
+	padding: 10px 15px;
+	border-radius: 4px;
+	border: none;
+}
+
+button[type="submit"] {
+	width: 50%;
+	margin-left: 6rem;
+	padding: 10px 15px;
+	border-radius: 4px;
+	border: none;
+}
+
+#bookShelf {
+	margin: 1rem;
+	width: 20%;
+	height: 10rem;
+	background-color: rgb(12, 10, 10);
+	border-radius: 5px;
+	padding-left: 15px;
+}
+
+#bookShelf > div {
+	position: sticky;
+	line-height: 30px;
+	color: rgb(255, 255, 255);
+}
+
+#btnRemove {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	background-color: rgb(255, 37, 37);
+	color: rgb(255, 255, 255);
+	height: 2.5rem;
+	width: 5rem;
+	border-radius: 5px;
+}
