@@ -9,7 +9,8 @@ h4 {
 }
 
 img {
-	width: 10rem;
+	display: none;
+	width: 3rem;
 	padding-right: 10rem;
 	margin-left: 3rem;
 }
@@ -20,17 +21,14 @@ img {
 
 #container {
 	margin: 1rem;
-	display: block;
-	border: none;
+	width: 20rem;
 }
 
 #bookForm {
-	float: right;
-	position: sticky;
 	display: block;
 	flex-direction: column;
 	display: none;
-	width: 30%;
+	width: 20rem;
 	margin-left: 20rem;
 	background-color: rgb(0, 0, 0);
 	border-radius: 4px;
@@ -83,15 +81,16 @@ select {
 
 button[type="submit"] {
 	width: 50%;
-	margin-left: 6rem;
-	padding: 10px 15px;
+	height: 2rem;
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 4px;
 	border: none;
 }
 
 #bookShelf {
 	margin: 1rem;
-	width: 20%;
+	width: 10rem;
 	height: 10rem;
 	background-color: rgb(12, 10, 10);
 	border-radius: 5px;
@@ -99,7 +98,6 @@ button[type="submit"] {
 }
 
 #bookShelf > div {
-	position: sticky;
 	line-height: 30px;
 	color: rgb(255, 255, 255);
 }
@@ -114,4 +112,7 @@ button[type="submit"] {
 	height: 2.5rem;
 	width: 5rem;
 	border-radius: 5px;
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
 }
